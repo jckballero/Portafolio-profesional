@@ -15,8 +15,9 @@ body {
 
 header {
     width: 100%;
-    height: 650px;
-    background-image: url(img/Skewed.png);
+    height: 750px;
+    /*650px height con sesgo*/
+    background-image: url(img/bg-4.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -24,6 +25,21 @@ header {
     overflow: hidden;
     color: #fff;
     text-align: center;
+    justify-content: space-around;
+}
+
+header img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+}
+
+#milogo img {
+    padding: 0;
+    margin: 0;
+    width: 5%;
+    height: 5%;
 }
 
 header .textos {
@@ -52,7 +68,8 @@ header .boton {
     border-radius: 3px;
 }
 
-.sesgoabajo {
+
+/*.sesgoabajo {
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -60,7 +77,7 @@ header .boton {
     border-width: 0 0 35vh 100vw;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
-}
+}*/
 
 .sesgoarriba {
     z-index: 10;
@@ -77,7 +94,7 @@ header .boton {
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    padding: 52px 0;
+    padding: 100px 0;
 }
 
 
@@ -201,7 +218,8 @@ header .boton {
     padding-top: 130px;
 }
 
-.sesgoabajo-unico {
+
+/*.sesgoabajo-unico {
     z-index: 10;
     position: absolute;
     bottom: 0;
@@ -209,7 +227,7 @@ header .boton {
     border-width: 0 0 35vh 100vw;
     border-style: solid;
     border-color: transparent transparent #2c3e50 transparent;
-}
+}*/
 
 .titulo-patrocinadores,
 .subtitulo-patrocinadores {
@@ -248,8 +266,17 @@ header .boton {
 /* Footer */
 
 footer {
-    background: #2c3e50;
+    /*background: #2c3e50;*/
+    background: #000;
     height: auto;
+    /*AQUI*/
+    background-image: url(img/bg-foo-1.png);
+}
+
+.contenedor-foo {
+    margin: auto;
+    overflow: hidden;
+    padding: 100px 0;
 }
 
 .titulo-footer,
@@ -267,7 +294,7 @@ footer {
 
 form {
     display: flex;
-    width: 100%;
+    width: 60%;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: auto;
@@ -280,16 +307,27 @@ input[type="email"] {
     padding: 13px;
     border: none;
     color: #fff;
-    font-family: 'open sans';
+    font-family: 'arial';
     background: rgba(37, 37, 33, .7);
     margin-bottom: 16px;
     border-top: 5px solid rgba(37, 37, 33, .7);
 }
 
-input[type="text"]:focus,
+
+/*input[type="text"]:focus,
 input[type="email"]:focus,
+
 textarea:focus {
     border-top: 5px solid rgba(255, 255, 255, 0.7);
+}*/
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+    background: #c7ccd179;
+}
+
+textarea:hover {
+    background: #c7ccd179;
 }
 
 textarea {
@@ -303,7 +341,7 @@ textarea {
     padding: 13px;
     border: none;
     color: #fff;
-    font-family: 'open sans';
+    font-family: 'arial';
     margin-bottom: 16px;
 }
 
@@ -314,6 +352,13 @@ input[type="submit"] {
     color: #fff;
     background: rgba(37, 37, 33, .7);
     width: 96px;
+}
+
+#redes {
+    width: 100%;
+    height: 100%;
+    margin-block-end: initial;
+    background: #fff;
 }
 
 
